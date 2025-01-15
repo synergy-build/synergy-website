@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirect to Synergy...</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <style>
+      /* Modern light styling */
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #f5f7fa, #e4e8ec);
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        color: #333;
+        text-align: center;
+      }
+      .container {
+        max-width: 400px;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+      .message {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .link {
+        font-size: 1rem;
+        color: #007bff;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <script>
+      // Preserve query parameters and redirect to your app
+      window.onload = () => {
+        const query = window.location.search;
+        setTimeout(() => {
+          window.location.href = `myapp://verify${query}`;
+        }, 2000); // Redirect after 3 seconds
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo.png" alt="App Logo" class="logo" />
+      <p class="message">Redirecting to Synergy...</p>
+      <p>
+        If you are not redirected,
+        <a href="myapp://verify" class="link">click here</a>.
+      </p>
+    </div>
+  </body>
+</html>
