@@ -4,129 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Synergy</title>
-    <link rel="icon" type="image/png" href="logo.png" />
-    <!-- Logo in browser tab -->
-    <style>
-      /* Global Styles */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Roboto", sans-serif;
-        background-color: #f9fafb; /* Soft background */
-        color: #1f2937; /* Dark gray text */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        text-align: center;
-        padding: 20px;
-      }
-
-      .container {
-        max-width: 700px;
-        padding: 20px;
-      }
-
-      .logo {
-        width: 100px;
-        margin: 0 auto 20px;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        color: #3d3d3d; /* Modern gray for heading */
-        margin-bottom: 20px;
-        line-height: 1.2;
-      }
-
-      p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        color: #4b5563;
-        margin-bottom: 30px;
-      }
-
-      .button-link {
-        display: inline-block;
-        padding: 14px 30px;
-        font-size: 1rem;
-        font-weight: bold;
-        background-color: #2e4fa6;
-        color: #ffffff;
-        text-decoration: none;
-        border-radius: 30px;
-        transition: all 0.3s ease;
-        box-shadow: 0 8px 20px rgba(46, 91, 255, 0.2);
-      }
-
-      .button-link:hover {
-        background-color: #1c46c7;
-        box-shadow: 0 12px 30px rgba(28, 70, 199, 0.3);
-        transform: translateY(-3px);
-      }
-
-      footer {
-        margin-top: 40px;
-        text-align: center;
-        font-size: 0.9rem;
-        color: #4a4a4a;
-      }
-
-      .footer-content {
-        margin-bottom: 10px;
-      }
-
-      .footer-link a {
-        color: #2e4fa6;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-      }
-
-      .footer-link a:hover {
-        color: #0056b3;
-        text-decoration: underline;
-      }
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        h1 {
-          font-size: 2rem;
-        }
-
-        p {
-          font-size: 1rem;
-        }
-
-        a {
-          font-size: 0.9rem;
-          padding: 12px 25px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
+    <!-- Header -->
+    <p class="logo">Synergy</p>
+
+    <!-- Main Container -->
     <div class="container">
-      <img class="logo" src="logo.png" alt="Company Logo" />
-      <h1>We’re Under Development</h1>
-      <p>
-        Thank you for visiting! Synergy is currently being built to provide you
-        with an amazing experience. Stay tuned for updates!
-      </p>
-      <a href="mailto:synergy.mobile.dev@gmail.com" class="button-link"
-        >Contact Us</a
-      >
-      <footer>
-        <div class="footer-content">
-          &copy; 2025 Synergy. All Rights Reserved.
+      <div class="content">
+        <h1>We're in Development</h1>
+        <h2 class="subheader">
+          We’ll conduct beta testing on our mobile app during the Summer of
+          2025. To participate as a tester, you need to be one of the following:
+        </h2>
+        <div class="list-style">
+          <ul class="bullet-list">
+            <li>An entry-level job seeker in a tech-related field.</li>
+            <li>
+              A tech recruiter (no consultancies; must work directly for the
+              hiring company).
+            </li>
+            <li>A hiring manager for a tech role/team.</li>
+            <li>
+              A U.S. citizen, or you have a visa allowing you to work legally in
+              the U.S.
+            </li>
+            <li>An iPhone or Android user.</li>
+          </ul>
         </div>
-        <div class="footer-link">
-          <a class="privacy-link" href="privacy-policy.html">Privacy Policy</a>
-        </div>
-      </footer>
+
+        <a href="mailto:synergy.mobile.dev@gmail.com" class="button-link"
+          >Become a tester</a
+        >
+      </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-link">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a
+          class="LinkedIn"
+          href="https://www.linkedin.com/company/synergy-mobile-app"
+          >LinkedIn</a
+        >
+        <a href="mailto:synergy.mobile.dev@gmail.com">Contact Us</a>
+      </div>
+      &copy; 2025 Synergy. All Rights Reserved.
+    </footer>
   </body>
 </html>
