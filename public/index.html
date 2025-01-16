@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
     <!-- Logo in browser tab -->
     <style>
@@ -26,10 +28,10 @@
         color: #1f2937; /* Dark gray text */
         display: flex;
         justify-content: center;
-        align-items: top;
+        align-items: center;
         min-height: 100vh;
         text-align: center;
-        padding: 20px;
+        padding: Columnx;
       }
 
       .container {
@@ -52,7 +54,7 @@
 
       h1 {
         font-size: 2.5rem;
-        color: #3d3d3d; /* Modern gray for heading */
+        color: #1A316A; /* Modern gray for heading */
         margin-bottom: 0px;
         margin-top: 90px;
         line-height: 1.2;
@@ -66,7 +68,7 @@
         margin-top: 32px;
         line-height: 1.2;
         font-family: "epilogue", sans-serif;
-        align: left;
+        align-items: left;
         font-weight: normal;
       }
       .logo {
@@ -75,6 +77,11 @@
   font-weight: normal;
   font-style: normal;
   color: #2E4FA6;
+  text-align: start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 32px;
       }
 
       p {
@@ -104,9 +111,13 @@
 
       .bullet-list {
         line-height: 1.6;
-        font-size: 1.1rem;
-        color: #4b5563;
-      }
+        font-size: 1rem;
+        color: #232327;
+        font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  }
 
       footer {
         margin-top: auto;
@@ -119,6 +130,8 @@
 
       .footer-content {
         margin-bottom: 10px;
+        width: 100%;
+        
       }
 
       .footer-link a {
@@ -140,6 +153,7 @@
           font-size: 2rem;
           font-family: "epilogue", sans-serif;
           font-weight: 600;
+      
         }
 
         p {
@@ -153,10 +167,11 @@
       }
     </style>
   </head>
+
   <body>
+    <p class ="logo">Synergy</p> 
     <div class="container">
       <div class="content">  
-      <p class="logo">Synergy</p>  
       <h1>We're in Development</h1>
       <h2 class="subheader" style= "text-align: left">
         We’ll conduct beta testing on our mobile app during the Summer of 2025.
@@ -190,7 +205,6 @@
             &copy; 2025 Synergy. All Rights Reserved.
        
           </div>
-        </div>
       </footer>
     </div>
   </body>
